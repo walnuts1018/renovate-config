@@ -1,12 +1,10 @@
 # renovate-config
 
-A [shareable config preset for Renovate](https://docs.renovatebot.com/config-presets/) used in [Hatena](https://hatena.co.jp/).
+A [shareable config preset for Renovate](https://docs.renovatebot.com/config-presets/) used in [Walnuts.dev](https://walnuts.dev/).
 
 ```json
 {
-  "extends": [
-    "github>hatena/renovate-config"
-  ]
+  "extends": ["github>walnuts1018/renovate-config"]
 }
 ```
 
@@ -44,7 +42,7 @@ Updates the [ecspresso](https://github.com/kayac/ecspresso) version defined in t
 
 ```json
 {
-  "extends": ["github>hatena/renovate-config:ecspressoVersion.json5"]
+  "extends": ["github>walnuts1018/renovate-config:ecspressoVersion.json5"]
 }
 ```
 
@@ -95,20 +93,18 @@ Grouping lint-related packages for JavaScript and TypeScript. Adding prettier an
 
 ```json
 {
-  "extends": [
-    ":timezone(Asia/Tokyo)"
-  ],
+  "extends": [":timezone(Asia/Tokyo)"],
   "schedule": [
     "after 10:30 before 18:00 every weekday except after 13:00 before 14:00"
   ]
 }
 ```
 
-This config is heavily based on our business hours in Hatena. So if this is not a good fit for you, please exclude as follows:
+This config is heavily based on our business hours in walnuts1018. So if this is not a good fit for you, please exclude as follows:
 
 ```json
 {
-  "ignorePresets": ["github>hatena/renovate-config:schedule"]
+  "ignorePresets": ["github>walnuts1018/renovate-config:schedule"]
 }
 ```
 
@@ -130,6 +126,6 @@ Updates Swift packages in XcodeGen's `project.yml` using `customManagers`.
 
 ```json
 {
-  "extends": ["github>hatena/renovate-config:xcodegenSwiftPackages.json5"]
+  "extends": ["github>walnuts1018/renovate-config:xcodegenSwiftPackages.json5"]
 }
 ```
