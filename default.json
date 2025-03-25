@@ -1,6 +1,6 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     ":separateMultipleMajorReleases",
     ":timezone(Asia/Tokyo)",
     "github>walnuts1018/renovate-config:automergePin",
