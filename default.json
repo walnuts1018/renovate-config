@@ -10,7 +10,7 @@
     "github>walnuts1018/renovate-config:limitDockerNodeUpdatesToLTS",
     "github>walnuts1018/renovate-config:pinGitHubActionDigests",
     "github>walnuts1018/renovate-config:reviewers",
-    "github>walnuts1018/renovate-config:vulnerabilityAlerts",
+    "github>walnuts1018/renovate-config:vulnerabilityAlerts"
   ],
   "labels": [
     "renovate"
