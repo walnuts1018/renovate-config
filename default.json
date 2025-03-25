@@ -4,16 +4,10 @@
     ":separateMultipleMajorReleases",
     ":timezone(Asia/Tokyo)",
     "github>walnuts1018/renovate-config:assign",
-    "github>walnuts1018/renovate-config:automergePin",
-    "github>walnuts1018/renovate-config:automergeTypesMinor",
-    "github>walnuts1018/renovate-config:groupAndroidPackages",
-    "github>walnuts1018/renovate-config:groupCocoaPodsPackages",
-    "github>walnuts1018/renovate-config:groupGolangPackages",
-    "github>walnuts1018/renovate-config:groupJest",
-    "github>walnuts1018/renovate-config:groupLinters",
+    "github>walnuts1018/renovate-config:automerge",
+    "github>walnuts1018/renovate-config:golang",
     "github>walnuts1018/renovate-config:limitDockerNodeUpdatesToLTS",
     "github>walnuts1018/renovate-config:pinGitHubActionDigests",
-    "github>walnuts1018/renovate-config:postUpdateOptions",
     "github>walnuts1018/renovate-config:reviewers",
     "github>walnuts1018/renovate-config:vulnerabilityAlerts"
   ],
@@ -36,5 +30,8 @@
         "botocore"
       ]
     }
-  ]
+  ],
+  "internalChecksFilter": "none",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 100,
 }

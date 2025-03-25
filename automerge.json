@@ -1,0 +1,36 @@
+{
+  "pin": {
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "matchDatasources": [
+        "github-tags",
+        "helm",
+        "docker"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": [
+        "aquaproj/aqua-registry",
+        "terraform",
+        "renovate/renovate"
+      ],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": [
+        "^@types/"
+      ],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
+  ]
+}
