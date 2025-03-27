@@ -19,7 +19,6 @@
       "matchPackageNames": [
         "aquaproj/aqua-registry",
         "terraform",
-        "renovate/renovate"
       ],
       "automerge": true
     },
