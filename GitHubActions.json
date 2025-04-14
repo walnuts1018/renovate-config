@@ -1,5 +1,5 @@
 {
-    "packageRules": [
+    "customManagers": [
         {
             "customType": "regex",
             "matchStringsStrategy": "any",
