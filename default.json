@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
     "github>aquaproj/aqua-renovate-config#2.7.5",
@@ -6,11 +7,14 @@
     ":timezone(Asia/Tokyo)",
     "github>walnuts1018/renovate-config:assign",
     "github>walnuts1018/renovate-config:automerge",
+    "github>walnuts1018/renovate-config:docker",
     "github>walnuts1018/renovate-config:GitHubActions",
     "github>walnuts1018/renovate-config:golang",
+    "github>walnuts1018/renovate-config:helm",
     "github>walnuts1018/renovate-config:limitDockerNodeUpdatesToLTS",
-    "github>walnuts1018/renovate-config:pinGitHubActionDigests",
+    "github>walnuts1018/renovate-config:npm",
     "github>walnuts1018/renovate-config:reviewers",
+    "github>walnuts1018/renovate-config:rust",
     "github>walnuts1018/renovate-config:vulnerabilityAlerts"
   ],
   "labels": [
@@ -18,24 +22,18 @@
   ],
   "configMigration": true,
   "dockerfile": {
-    "fileMatch": [
-      "(^|/)Dockerfile-[^/]*$"
+    "managerFilePatterns": [
+      "/(^|/)Dockerfile-[^/]*$/"
     ]
   },
   "npm": {
     "rangeStrategy": "bump"
   },
-  "packageRules": [
-    {
-      "groupName": "boto3",
-      "matchPackageNames": [
-        "boto3",
-        "botocore"
-      ]
-    }
-  ],
   "dependencyDashboard": true,
-  "internalChecksFilter": "none",
+  "internalChecksFilter": "strict",
+  "minimumReleaseAgeBehaviour": "timestamp-optional",
+  "platformAutomerge": false,
+  "prCreation": "immediate",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 100
 }

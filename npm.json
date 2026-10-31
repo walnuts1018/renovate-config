@@ -1,0 +1,90 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "npmパッケージはリリースから7日間経過するまで更新しない",
+      "matchDatasources": [
+        "npm"
+      ],
+      "minimumReleaseAge": "7 days"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "@opentelemetry/{/,}**"
+      ],
+      "groupName": "Frontend OpenTelemetry"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "storybook",
+        "@storybook/{/,}**"
+      ],
+      "groupName": "Storybook"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "vitest",
+        "@vitest/{/,}**"
+      ],
+      "groupName": "Vitest"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "@dnd-kit/{/,}**"
+      ],
+      "groupName": "dnd-kit"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "react-relay",
+        "relay-runtime",
+        "relay-compiler",
+        "babel-plugin-relay"
+      ],
+      "groupName": "Relay"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "@uppy/{/,}**"
+      ],
+      "groupName": "Uppy"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "@tanstack/{/,}**"
+      ],
+      "groupName": "TanStack"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "markuplint",
+        "@markuplint/{/,}**"
+      ],
+      "groupName": "Markuplint"
+    }
+  ]
+}

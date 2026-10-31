@@ -1,0 +1,76 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Kubernetesのコンテナイメージをダイジェスト固定する",
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchManagers": [
+        "kubernetes"
+      ],
+      "pinDigests": true
+    },
+    {
+      "description": "Dockerfileのベースイメージをダイジェスト固定する",
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "pinDigests": true
+    },
+    {
+      "groupName": "actions-runner-controller",
+      "matchPackageNames": [
+        "ghcr.io/actions/actions-runner-controller-charts/gha-runner-scale-set-controller",
+        "ghcr.io/actions/actions-runner-controller-charts/gha-runner-scale-set"
+      ]
+    },
+    {
+      "groupName": "netbird",
+      "matchPackageNames": [
+        "/netbird/"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "ghcr.io/walnuts1018/2024-ac-hacking",
+        "ghcr.io/walnuts1018/2024-ac-hacking-front",
+        "ghcr.io/walnuts1018/walnuts.dev",
+        "ghcr.io/walnuts1018/http-dump",
+        "ghcr.io/walnuts1018/mucaron-backend",
+        "ghcr.io/walnuts1018/mucaron-frontend"
+      ],
+      "versioning": "regex:^[a-f0-9]+-(?<patch>[0-9]+)$"
+    },
+    {
+      "matchPackageNames": [
+        "ghcr.io/kmc-jp/oekaki-dengon-game-back",
+        "ghcr.io/kmc-jp/oekaki-dengon-game-front",
+        "ghcr.io/walnuts1018/openchokin-back",
+        "ghcr.io/walnuts1018/openchokin-front"
+      ],
+      "versioning": "regex:^v0\\.0\\.0-[a-f0-9]+-(?<patch>[0-9]+)$"
+    },
+    {
+      "matchPackageNames": [
+        "photoprism/photoprism"
+      ],
+      "versioning": "regex:^(?<major>[0-9]{2})(?<minor>[0-9]{2})(?<patch>[0-9]{2})$"
+    },
+    {
+      "matchPackageNames": [
+        "ghcr.io/servercontainers/samba"
+      ],
+      "versioning": "regex:^a(?<major>[0-9]+)\\.(?<minor>[0-9]+)\\.(?<patch>[0-9]+)-s(?<build>[0-9]+)\\.(?<revision>[0-9]+)\\.([0-9]+)-r([0-9]+)$"
+    },
+    {
+      "matchPackageNames": [
+        "chrislusf/seaweedfs"
+      ],
+      "versioning": "regex:^(?<major>[0-9]+)\\.(?<minor>[0-9]+)(_(?<compatibility>.+))?$"
+    }
+  ]
+}

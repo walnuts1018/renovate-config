@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "wasm-bindgenはmiseとCargoでバージョンを揃える必要がある",
+      "matchPackageNames": [
+        "wasm-bindgen",
+        "wasm-bindgen-cli",
+        "rustwasm/wasm-bindgen",
+        "github:rustwasm/wasm-bindgen"
+      ],
+      "groupName": "wasm-bindgen"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[tools]
+node = "24"
+jactionlint = "2.3.0"
+pinact = "5.0.0"
+# @yarnpkg/libzip@3.2.2 はYarnメンテナーによる公開だがprovenanceが無いため、
+# このパッケージだけtrust policyの例外にする。
+"npm:renovate" = { version = "44.198.3", trust_policy_excludes = ["@yarnpkg/libzip@3.2.2"] }
+
+[tasks."lint:gha"]
+run = "jactionlint && pinact run --check --verify-comment"
+
+[tasks."lint:renovate"]
+run = "renovate-config-validator --no-global --strict ./*.json"
