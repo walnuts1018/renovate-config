@@ -1,5 +1,5 @@
 [tools]
-node = "24"
+node = "26"
 jactionlint = "2.4.0"
 pinact = "5.0.2"
 "npm:renovate" = { version = "44.198.3", trust_policy_excludes = ["@yarnpkg/libzip@3.2.2"] }
