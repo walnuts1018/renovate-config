@@ -1,5 +1,5 @@
 [tools]
-node = "24"
+node = "26"
 jactionlint = "2.4.0"
 pinact = "5.0.0"
 # @yarnpkg/libzip@3.2.2 はYarnメンテナーによる公開だがprovenanceが無いため、
