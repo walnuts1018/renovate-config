@@ -2,6 +2,17 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
+      "description": "RustのバージョンをCargo.toml・mise・Dockerfileで揃える",
+      "matchDatasources": [
+        "rust-version",
+        "docker"
+      ],
+      "matchPackageNames": [
+        "/^(rust|(?:docker\\.io\\/)?(?:library\\/)?rust)$/"
+      ],
+      "groupName": "Rust"
+    },
+    {
       "description": "wasm-bindgenはmiseとCargoでバージョンを揃える必要がある",
       "matchPackageNames": [
         "wasm-bindgen",

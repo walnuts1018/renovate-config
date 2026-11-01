@@ -11,7 +11,7 @@
     "github>walnuts1018/renovate-config:GitHubActions",
     "github>walnuts1018/renovate-config:golang",
     "github>walnuts1018/renovate-config:helm",
-    "github>walnuts1018/renovate-config:limitDockerNodeUpdatesToLTS",
+    "github>walnuts1018/renovate-config:node",
     "github>walnuts1018/renovate-config:npm",
     "github>walnuts1018/renovate-config:reviewers",
     "github>walnuts1018/renovate-config:rust",

@@ -2,6 +2,18 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
+      "description": "Goのバージョンをgo.mod・mise・Dockerfileで揃える",
+      "matchDatasources": [
+        "golang-version",
+        "github-tags",
+        "docker"
+      ],
+      "matchPackageNames": [
+        "/^(go|golang\\/go|(?:docker\\.io\\/)?(?:library\\/)?golang)$/"
+      ],
+      "groupName": "Go"
+    },
+    {
       "matchDatasources": [
         "go"
       ],

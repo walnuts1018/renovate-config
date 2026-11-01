@@ -22,6 +22,19 @@
       "pinDigests": true
     },
     {
+      "description": "syntax directiveはDockerfileの機能でイメージではないためダイジェスト固定しない",
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "matchDepTypes": [
+        "syntax"
+      ],
+      "pinDigests": false
+    },
+    {
       "groupName": "actions-runner-controller",
       "matchPackageNames": [
         "ghcr.io/actions/actions-runner-controller-charts/gha-runner-scale-set-controller",

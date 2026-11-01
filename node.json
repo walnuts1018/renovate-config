@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Node.jsはLTSのみ追従し、package.json・mise・Dockerfileで揃える",
+      "matchDatasources": [
+        "node-version",
+        "npm",
+        "docker"
+      ],
+      "matchPackageNames": [
+        "@types/node",
+        "/^(?:docker\\.io\\/)?(?:library\\/)?node$/"
+      ],
+      "versioning": "node",
+      "groupName": "Node.js"
+    }
+  ]
+}
