@@ -15,5 +15,3 @@ mise install
 mise run lint:renovate
 mise run lint:gha
 ```
-
-The Node.js preset updates LTS toolchains. It leaves `engines.node` unchanged so a tooling update does not raise a package's minimum supported Node.js version automatically.
