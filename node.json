@@ -2,6 +2,19 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
+      "description": "Keep npm engine constraints independent from the Node.js toolchain",
+      "matchManagers": [
+        "npm"
+      ],
+      "matchDepTypes": [
+        "engines"
+      ],
+      "matchPackageNames": [
+        "node"
+      ],
+      "enabled": false
+    },
+    {
       "description": "Node.jsはLTSのみ追従し、package.json・mise・Dockerfileで揃える",
       "matchDatasources": [
         "node-version",
